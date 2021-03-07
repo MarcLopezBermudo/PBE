@@ -21,5 +21,5 @@ if __name__ == "__main__":
     rf = RfidPnNfc()
     uid = rf.read_uid()
     print('UID: '+ uid)
-    print ('*** Welcome! ***')
+    print ("*** Welcome! ***")
     
