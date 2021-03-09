@@ -1,5 +1,6 @@
 from pynfc import Nfc, Desfire, Timeout
 
+# ttyAMA0 --> first PL011 (UART0)
 n = Nfc("pn532_uart:/dev/ttyAMA0:115200")
 
 DESFIRE_DEFAULT_KEY = b'\x00'*8
