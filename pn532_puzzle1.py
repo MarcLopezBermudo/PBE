@@ -1,17 +1,12 @@
-from pynfc import Nfc, Desfire, Timeout
+from pynfc import Nfc, Timeout
 
-# ttyAMA0 --> first PL011 (UART0)
-n = Nfc("pn532_uart:/dev/ttyAMA0:115200")
-
-DESFIRE_DEFAULT_KEY = b'\x00'*8
-MIFARE_BLANK_TOKEN = b'xFF'*1024*4
-
-print("*** Dipositi el vostre identificador en el lector ***" )
-
-class RfidPnNfc:
+class RfidPnNfc():
     # return uid in hexa str
+    def __init__(self):
+        self.n = Nfc("pn532_uart:/dev/ttyAMA0:115200")
+    
     def read_uid(self):
-        for target in n.poll():
+        for target in self.n.poll():
             try:
                 uid = target.uid.decode().upper()
                 return uid
@@ -19,6 +14,7 @@ class RfidPnNfc:
                 pass
 
 if __name__ == "__main__":
+    print("*** Dipositi el vostre identificador en el lector ***" )
     rf = RfidPnNfc()
     uid = rf.read_uid()
     print('UID: '+ uid)
