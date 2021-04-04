@@ -1,10 +1,7 @@
-#Window 
-{
+#Window {
 	background-color: DodgerBlue ;
-
 }
-         
-		  
+         		  
 #Button{
 	background-color: DodgerBlue ;
 	border: 2px White dotted;
@@ -13,18 +10,15 @@
 		
 #Button:hover{
 	border: 2px White solid;
-	background-color: Blue
-							 
+	background-color: Blue						 
 }
 		
 #Button:active{
-	background-color: red
-							 
+	background-color: red						 
 }
 						
 #Label {
 	font-family: "Times New Roman", Times, serif;
 	color: white;
-	font-size: 200%;
-								 
+	font-size: 200%;							 
 }
