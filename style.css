@@ -1,0 +1,30 @@
+#Window 
+{
+	background-color: DodgerBlue ;
+
+}
+         
+		  
+#Button{
+	background-color: DodgerBlue ;
+	border: 2px White dotted;
+	color: white;	
+}
+		
+#Button:hover{
+	border: 2px White solid;
+	background-color: Blue
+							 
+}
+		
+#Button:active{
+	background-color: red
+							 
+}
+						
+#Label {
+	font-family: "Times New Roman", Times, serif;
+	color: white;
+	font-size: 200%;
+								 
+}
