@@ -5,7 +5,6 @@ gi.require_version("Gtk","3.0")
 from gi.repository import Gtk, Gdk,GdkPixbuf
 from pn532_puzzle1 import *
 
-
 class Window(Gtk.Window):
     def __init__(self):
         # Window
@@ -47,8 +46,7 @@ def scan_uid():
     rf = RfidPnNfc()
     uid = rf.read_uid()
     win.label.set_label('UID: '+uid)
-    
-        
+      
 def load_css(self):
     # CSS 
     self.style_provider = Gtk.CssProvider()
