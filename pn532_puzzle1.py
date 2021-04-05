@@ -1,10 +1,10 @@
 from pynfc import Nfc, Timeout
 
 class RfidPnNfc():
-    # return uid in hexa str
+  
     def __init__(self):
         self.n = Nfc("pn532_uart:/dev/ttyAMA0:115200")
-    
+    # return uid in hexa str
     def read_uid(self):
         for target in self.n.poll():
             try:
