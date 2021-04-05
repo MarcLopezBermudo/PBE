@@ -9,7 +9,8 @@ class Window(Gtk.Window):
     def __init__(self):
         # Window
         Gtk.Window.__init__(self,title="Puzzle2", decorated=True, name="Window")
-        self.set_default_size(500, 200)
+        self.set_default_size(500, 200)ç
+        
         # Box
         self.box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=20,name="Box")
         self.add(self.box)
